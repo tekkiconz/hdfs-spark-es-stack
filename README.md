@@ -20,27 +20,29 @@ Thực hiện theo các bước trong folder
 
 File để build spark job sẽ dược đặt trong folder [`/spark_scala`](./spark_scala)
 
-Đẩy file [`hdfs_es.jar`](./spark_scala/hdfs_es.jar) lên máy `spark-master` 
+Đẩy file [`hdfs_es.jar`](./spark_scala/hdfs_es.jar) lên máy `spark-master`
 
-```
-$ docker cp ./spark_scala/hdfs_es.jar spark-master:/hdfs_es.jar
+```bash
+$docker cp ./spark_scala/hdfs_es.jar spark-master:/hdfs_es.jar
 ```
 
 Vào cli của spark-master
 
-```
-$ docker exec spark-master bash
+```bash
+$docker exec spark-master bash
 ```
 
 Chạy spark job
 
-```
-$ spark-submit hdfs_es.jar
+```bash
+$spark-submit hdfs_es.jar
 ```
 
 Kiểm tra spark job và thực hiện visualize trên `Kibana`
-# Tham khảo
+
+## Tham khảo
 
 Dự án được thực hiện và lấy ý tưởng dựa trên một số dự án sau:
+
 - [Big Data Europe](https://github.com/big-data-europe)
 - [ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
