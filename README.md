@@ -20,6 +20,8 @@ Thực hiện theo các bước trong folder
 
 File để build spark job sẽ dược đặt trong folder [`/spark_scala`](./spark_scala)
 
+Thay đổi ip trong file `hdfs_ex.scala` cho đúng ip của máy ElasticSearch
+
 Đẩy file [`hdfs_es.jar`](./spark_scala/hdfs_es.jar) lên máy `spark-master`
 
 ```bash
